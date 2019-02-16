@@ -1,0 +1,26 @@
+%% {{cookiecutter.author}}
+%% {{cookiecutter.email}}
+
+% (command_footer)
+\newcommand{\footer}{
+	\rfoot{\thepage}
+}
+
+% (command_fontstyle)
+\newcommand{\fontstyle}[1]{
+	\setmainfont{{'{#1}'}}
+}
+
+% (command_header)
+\newcommand{\header}[3]{
+	\lhead{\small #1 -- #2}
+	\rhead{\small #3}
+}
+
+% (command_linespacing)
+\newcommand{\linespacing}[1]{
+	\setstretch{{'#1'}}
+}
+
+% (command_renew_refname)
+\renewcommand{\refname}{\normalfont\selectfont\normalsize\textbf{References}}

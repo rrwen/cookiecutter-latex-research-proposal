@@ -1,0 +1,148 @@
+%% {{cookiecutter.author}}
+%% {{cookiecutter.email}}
+
+% amsmath
+%
+% Useful commands for math
+%
+% Usage:
+%
+%\begin{equation} \label{eq:1}
+%   Y_i = \beta_0 + \beta_1 X_i + \epsilon_i
+% \end{equation}
+%
+\usepackage{amsmath}
+
+% array
+%
+% Improve array and tabular formatting
+%
+\usepackage{array}
+
+% authblk
+%
+% Support for footnote style author/affiliation
+%
+\usepackage{authblk}
+
+% booktabs
+%
+% Support for better table formatting.
+%
+\usepackage{booktabs}
+
+% caption
+%
+% Support for captions.
+%
+% Usage:
+%
+% \captionsetup[FLOAT_TYPE]{OPTIONS}
+%
+\usepackage{caption}
+\captionsetup[lstlisting]{
+	justification=raggedright,
+	singlelinecheck=false
+}
+
+% enumitem
+%
+% Support for enumeration listings.
+%
+% Usage:
+%
+% \begin{enumerate}[label=(\alph*)]
+% \item item a
+% \item item b
+% \end{enumerate}
+%
+\usepackage{enumitem}
+
+% fontspec
+%
+% Support for font styles.
+%
+% Usage:
+%
+% \setmainfont{Times New Roman}
+%
+\usepackage{fontspec}
+
+% geometry
+%
+% Support for page dimensions
+%
+% Usage:
+%
+% \usepackage[letterpaper, landscape, margin=2in]{geometry}
+%
+\usepackage[includehead,includefoot]{geometry}
+\geometry{{'{' + cookiecutter.vars.geometry_margins + '}'}}
+
+% fancyhdr
+%
+% Support for custom page headers and footers.
+%
+% Usage:
+%
+% \pagestyle{fancy}
+% \fancyhf{}
+% \rfoot{\thepage}
+% \begin{document}
+% \end{document}
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyfoot{}
+
+% graphicx
+%
+% Support for images
+%
+% Usage:
+%
+% \includegraphics[height=1cm, width=1cm]{example-image}
+%
+\usepackage{graphicx}
+\graphicspath{{'{{' + cookiecutter.image_folder + '}}'}}
+\DeclareGraphicsExtensions{{'{' + cookiecutter.image_formats + '}'}}
+
+% inputenc
+%
+% Support for input encoding
+%
+% Usage:
+%
+% \usepackage[utf8]{inputenc}
+%
+\usepackage[utf8]{inputenc}
+
+% natbib
+%
+% Support for better citations
+%
+\usepackage{natbib}
+
+% setspace
+%
+% Support for line spacing
+%
+% Usage:
+%
+% \onehalfspacing
+% \doublespacing
+% \setstretch{1.25}
+%
+\usepackage{setspace}
+
+% url
+%
+% Support for link handling and breaking
+%
+% Usage:
+%
+% \url{my_url_here}
+%
+\usepackage{url}

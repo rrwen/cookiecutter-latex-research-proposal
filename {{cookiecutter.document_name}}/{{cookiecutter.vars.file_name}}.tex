@@ -1,0 +1,30 @@
+%% {{cookiecutter.author}}
+%% {{cookiecutter.email}}
+
+\documentclass[letterpaper,{{cookiecutter.font_size}}]{article}
+
+% PACKAGES AND COMMANDS
+
+\input{tex/packages}
+\input{tex/commands}
+
+% FONT
+
+\fontstyle{{'{' + cookiecutter.font_style + '}'}}
+
+% HEADER AND FOOTER
+
+\header{{'{' + cookiecutter.author + '}'}}{{'{' + cookiecutter.email + '}' }}{{'{' + cookiecutter.title + '}'}}
+\footer
+
+% DOCUMENT
+
+\begin{document}
+\linespacing{{'{' + cookiecutter.line_spacing + '}'}}
+
+\input{tex/body}
+
+\bibliographystyle{apa}
+\bibliography{tex/references}
+
+\end{document}
