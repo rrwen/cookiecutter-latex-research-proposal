@@ -8,9 +8,11 @@
 \input{tex/packages}
 \input{tex/commands}
 
+{% if cookiecutter.font_style != "libertine" -%}
 % FONT
 
 \fontstyle{{'{' + cookiecutter.font_style + '}'}}
+{%- endif %}
 
 % HEADER AND FOOTER
 

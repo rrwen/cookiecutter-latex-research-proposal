@@ -119,6 +119,24 @@
 %
 \usepackage[utf8]{inputenc}
 
+% lastpage
+%
+% Obtain the last page
+%
+% Usage:
+%
+% \thelastpage
+%
+\usepackage{lastpage}
+
+{% if cookiecutter.font_style == "libertine" -%}
+% libertine
+%
+% Libertine font style
+%
+\usepackage{libertine}
+{%- endif %}
+
 % natbib
 %
 % Support for better citations
