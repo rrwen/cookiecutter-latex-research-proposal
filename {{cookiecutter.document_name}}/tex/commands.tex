@@ -3,7 +3,7 @@
 
 % (command_footer)
 \newcommand{\footer}{
-	\rfoot{\thepage}
+	\rfoot{\small\thepage\hspace{2pt} of \thelastpage}
 }
 
 % (command_fontstyle)
@@ -19,7 +19,12 @@
 
 % (command_linespacing)
 \newcommand{\linespacing}[1]{
-	\setstretch{{'#1'}}
+	\setstretch{{'{#1}'}}
+}
+
+% (command_thelastpage)
+\newcommand{\thelastpage}{
+	\pageref{LastPage}
 }
 
 % (command_renew_refname)
