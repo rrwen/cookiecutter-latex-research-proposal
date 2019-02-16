@@ -11,6 +11,6 @@ install:
   - pip install cookiecutter
 script:
   - cookiecutter --no-input gh:rrwen/cookiecutter-latex-research-proposal font_style="Liberation Sans"
-  - cd template_name
+  - cd cookiecutter-latex-research-proposal
   - chmod +x make.sh
   - ./make.sh
