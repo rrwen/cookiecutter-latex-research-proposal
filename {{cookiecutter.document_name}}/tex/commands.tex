@@ -1,6 +1,16 @@
 %% {{cookiecutter.author}}
 %% {{cookiecutter.email}}
 
+% (command_citationfile)
+\newcommand{\citationfile}[1]{
+	\bibliography{{'{#1}'}}
+}
+
+% (command_citationstyle)
+\newcommand{\citationstyle}[1]{
+	\usepackage[natbib=true,style={{'#1'}},maxnames=99]{biblatex}
+}
+
 % (command_footer)
 \newcommand{\footer}{
 	\rfoot{\small\scshape\thepage\hspace{2pt} of \thelastpage}
@@ -29,3 +39,8 @@
 
 % (command_renew_refname)
 \renewcommand{\refname}{\normalfont\selectfont\normalsize\large\scshape{References}}
+
+% (command_referencelist)
+\newcommand{\referencelist}{
+	\printbibliography[title={\normalfont\selectfont\scshape\large References}]
+}

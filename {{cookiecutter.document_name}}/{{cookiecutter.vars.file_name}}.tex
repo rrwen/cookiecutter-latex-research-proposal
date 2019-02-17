@@ -8,6 +8,10 @@
 \input{tex/packages}
 \input{tex/commands}
 
+% CITATIONS
+\citationstyle{{'{' + cookiecutter.citation_style + '}'}}
+\citationfile{tex/citations}
+
 {% if cookiecutter.font_style != "libertine" -%}
 % FONT
 
@@ -26,7 +30,6 @@
 
 \input{tex/body}
 
-\bibliographystyle{apa}
-\bibliography{tex/references}
+\referencelist
 
 \end{document}
