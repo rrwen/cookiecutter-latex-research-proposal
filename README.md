@@ -5,7 +5,7 @@ rrwen.dev@gmail.com
 
 Personal template for LaTeX research proposals with Python cookiecutter.
 
-[![Build Status](https://travis-ci.org/rrwen/cookiecutter-latex.svg?branch=master)](https://travis-ci.org/rrwen/cookiecutter-latex-research-proposal)
+[![Build Status](https://travis-ci.org/rrwen/cookiecutter-latex-research-proposal.svg?branch=master)](https://travis-ci.org/rrwen/cookiecutter-latex-research-proposal)
 [![GitHub license](https://img.shields.io/github/license/rrwen/cookiecutter-latex.svg)](https://github.com/rrwen/cookiecutter-latex-research-proposal/blob/master/LICENSE)
 
 ## Install
